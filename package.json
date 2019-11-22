@@ -33,11 +33,12 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.5.3",
     "@nestjs/common": "^6.10.1",
     "express": "^4.17.1",
-    "redis": "^2.8.0"
+    "redis": "^2.8.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.3",
+    "twisted": "^1.4.0"
   },
   "jest": {
     "moduleFileExtensions": [
