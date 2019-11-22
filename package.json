@@ -1,0 +1,26 @@
+{
+  "name": "twisted-common",
+  "version": "1.0.0",
+  "description": "Common utilities for twisted backends",
+  "scripts": {
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "lint:fix": "tslint --fix -p tsconfig.json -c tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/twisted.gg/twisted-common.git"
+  },
+  "keywords": [],
+  "author": "TwistedGG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/twisted.gg/twisted-common/issues"
+  },
+  "homepage": "https://gitlab.com/twisted.gg/twisted-common#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.2"
+  }
+}
