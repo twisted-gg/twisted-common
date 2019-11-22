@@ -9,10 +9,9 @@ export interface ICacheServiceOptions {
    * Default expiration time
    */
   expiration: number
-  version: string
 }
 
-export class CacheService {
+export class CacheServiceCommon {
   private client?: Redis.RedisClient
 
   constructor (private readonly options: ICacheServiceOptions) {
