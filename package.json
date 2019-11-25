@@ -6,8 +6,11 @@
     "test": "jest",
     "test:cov": "jest --coverage",
     "lint": "tslint -p tsconfig.json -c tslint.json",
-    "lint:fix": "tslint --fix -p tsconfig.json -c tslint.json"
+    "lint:fix": "tslint --fix -p tsconfig.json -c tslint.json",
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/twisted.gg/twisted-common.git"
