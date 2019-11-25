@@ -1,11 +1,11 @@
-import { CacheService } from './CacheService'
+import { CacheServiceCommon } from './CacheService'
 import { stub, restore } from 'sinon'
 import { InternalServerErrorException } from '@nestjs/common'
 import * as _ from 'lodash'
 import * as utils from './CacheService.utils'
 
-describe('CacheService', () => {
-  let service: CacheService
+describe('CacheServiceCommon', () => {
+  let service: CacheServiceCommon
   const plainOptions = { expiration: 0, available: false, url: '', version: '' }
   function forceAvailable (service, connected = true) {
     service.client = service.client || {}
@@ -18,7 +18,7 @@ describe('CacheService', () => {
       .callsFake(() => {
         passByLogger = true
       })
-    service = new CacheService(plainOptions)
+    service = new CacheServiceCommon(plainOptions)
     const available = utils.redisIsAvailable(_.get(service, 'client'))
     expect(available).toEqual(false)
     expect(passByLogger).toEqual(true)
