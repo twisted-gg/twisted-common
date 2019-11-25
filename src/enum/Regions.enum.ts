@@ -1,5 +1,5 @@
 import { Constants } from 'twisted'
 
-export const ListRegions = [
+export const ListRegions: string[] = [
   Constants.Regions.LAT_NORTH
 ]
