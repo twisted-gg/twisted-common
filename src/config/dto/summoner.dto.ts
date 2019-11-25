@@ -1,4 +1,4 @@
-import { RegionsList } from '../../enum'
+import { ListRegions } from '../../enum'
 import { ApiModelProperty } from '@nestjs/swagger'
 import { IsNotEmpty, IsEnum, IsString } from 'class-validator'
 import { Regions } from 'twisted/dist/constants'
@@ -10,10 +10,10 @@ export class GetSummonerQueryDTO {
   summonerName!: string
 
   @ApiModelProperty({
-    enum: RegionsList,
+    enum: ListRegions,
     type: String
   })
-  @IsEnum(RegionsList)
+  @IsEnum(ListRegions)
   @IsNotEmpty()
   region!: any
 
