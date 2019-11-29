@@ -3,12 +3,12 @@ image: node:12
 before_script:
   - npm install
 
-test:lint:
-  script:
-    - npm run lint
-test:node:12:
-  script:
-    - npm test
+# test:lint:
+#   script:
+#     - npm run lint
+# test:node:12:
+#   script:
+#     - npm test
 
 # Publish tagged versions to npm
 publish:
