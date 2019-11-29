@@ -1,5 +1,5 @@
 {
-  "name": "twisted-common",
+  "name": "@twisted.gg/common",
   "version": "1.0.0",
   "description": "Common utilities for twisted backends",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "lint:fix": "tslint --fix -p tsconfig.json -c tslint.json",
     "build": "tsc",
-    "postinstall": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "main": "dist/index.js",
   "repository": {
