@@ -4,12 +4,12 @@ before_script:
   - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
   - npm install
 
-# test:lint:
-#   script:
-#     - npm run lint
-# test:node:12:
-#   script:
-#     - npm test
+test:lint:
+  script:
+    - npm run lint
+test:node:12:
+  script:
+    - npm test
 
 # Publish tagged versions to npm
 publish:
