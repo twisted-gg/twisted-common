@@ -1,4 +1,4 @@
-image: node:12
+image: node:13.0.1
 
 before_script:
   - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
