@@ -1,1 +1,1 @@
-export * from 'twisted/dist/dto'
+export * from 'twisted/dist/models-dto'
