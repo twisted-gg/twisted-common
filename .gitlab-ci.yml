@@ -2,9 +2,6 @@ image: node:12
 
 before_script:
   - npm install
-cache:
-  paths:
-    - node_modules/
 
 test:lint:
   script:
@@ -20,6 +17,5 @@ publish:
     refs:
       - master
   script:
-    - npm run build
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
