@@ -1,7 +1,6 @@
 image: node:13.0.1
 
 before_script:
-  - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
   - npm install
 
 # test:lint:
@@ -19,4 +18,5 @@ publish:
       - master
   script:
     - npm run build
+    - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
     - npm publish
