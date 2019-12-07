@@ -19,4 +19,5 @@ export class GetSummonerQueryDTO {
 
   // Hidden params
   summonerPUUID?: string
+  accountID?: string
 }

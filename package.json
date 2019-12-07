@@ -1,6 +1,6 @@
 {
   "name": "@twisted.gg/common",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Common utilities for twisted backends",
   "scripts": {
     "test": "jest",
