@@ -1,6 +1,6 @@
 {
   "name": "@twisted.gg/common",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "Common utilities for twisted backends",
   "scripts": {
     "test": "jest",
@@ -45,7 +45,7 @@
     "redis": "^2.8.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.3",
-    "twisted": "^1.11.0"
+    "twisted": "^1.13.0"
   },
   "jest": {
     "moduleFileExtensions": [
